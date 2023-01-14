@@ -57,7 +57,7 @@ function LetterForm() {
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <h5> Issue </h5>
-              <select
+              {/* <select
                 onChange={(e) => setTopic(e.target.value)}
                 required
                 name="issues"
@@ -71,7 +71,19 @@ function LetterForm() {
                     </option>
                   );
                 })}
-              </select>
+              </select> */}
+              <div className="mb-3">
+                {/* <label htmlFor="username">Emai</label> */}
+                <input
+                  onChange={(e) => setTopic(e.target.value)}
+                  type="text"
+                  name="topic"
+                  value={topic}
+                  className="form-control"
+                  required
+                  placeholder="Issue"
+                />
+              </div>
             </div>
             <div className="mb-3">
               <h5>Stance</h5>
