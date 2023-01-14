@@ -72,6 +72,18 @@ function LetterForm() {
                   );
                 })}
               </select>
+              <div className="mb-3">
+                {/* <label htmlFor="username">Emai</label> */}
+                <input
+                  onChange={(e) => setTopic(e.target.value)}
+                  type="text"
+                  name="topic"
+                  value={topic}
+                  className="form-control"
+                  required
+                  placeholder="Issue"
+                />
+              </div>
             </div>
             <div className="mb-3">
               <h5>Stance</h5>
